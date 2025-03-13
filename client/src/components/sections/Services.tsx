@@ -55,45 +55,44 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-6">Our Services</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Comprehensive HR solutions powered by artificial intelligence and backed by
-            evidence-based practices.
-          </p>
-        </motion.div>
-
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <motion.div
             variants={container}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:col-span-2"
+            className="lg:col-span-2"
           >
-            {services.map((service, index) => (
-              <motion.div key={index} variants={item}>
-                <Card className="h-full transition-transform hover:-translate-y-2">
-                  <CardHeader>
-                    <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                      <service.icon className="w-8 h-8 text-primary" />
-                    </div>
-                    <CardTitle className="text-2xl">{service.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base">
-                      {service.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+            <Card className="h-full border-2">
+              <CardHeader className="border-b bg-muted/50">
+                <CardTitle className="text-4xl font-bold">Our Services</CardTitle>
+                <CardDescription className="text-lg">
+                  Comprehensive HR solutions powered by artificial intelligence and backed by
+                  evidence-based practices.
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {services.map((service, index) => (
+                    <motion.div key={index} variants={item}>
+                      <Card className="h-full transition-transform hover:-translate-y-2">
+                        <CardHeader>
+                          <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                            <service.icon className="w-8 h-8 text-primary" />
+                          </div>
+                          <CardTitle className="text-2xl">{service.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription className="text-base">
+                            {service.description}
+                          </CardDescription>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
           </motion.div>
 
           <motion.div
