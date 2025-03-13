@@ -15,7 +15,7 @@ const services = [
     icon: Brain,
     title: "People Function Transformation",
     description:
-      "Transform your HR organization into a strategic business partner by redesigning your people function for the AI era. We build the right infrastructure, capabilities, and ways of working that deliver measurable business impact.",
+      "Transform your People Function for AI era by redesigning your operating model and workflows. We build the right infrastructure, capabilities, and ways of working that deliver measurable business impact.",
     href: "/services/transformation"
   },
   {
@@ -79,7 +79,7 @@ export default function Services() {
               <CardHeader className="border-b bg-muted/50">
                 <CardTitle className="text-4xl font-bold">Our Services</CardTitle>
                 <CardDescription className="text-lg">
-                  Transform your HR organization into a strategic business partner with our comprehensive solutions.
+                  We partner with forward-thinking organizations to transform People Functions into strategic drivers of AI-powered business success through targeted consulting, capability building, and implementation support.
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">

@@ -15,9 +15,7 @@ export default function Hero() {
               Transforming <span className="text-primary">HR</span> Through AI and Evidence
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Unlock the full potential of your HR department with cutting-edge AI solutions
-              and evidence-based strategies. Our expert consultancy brings innovation to
-              your human resources operations.
+              People Functions are uniquely positioned to make the AI transition of businesses a true success. At Alternate, we help People Functions transform themselves first, then lead their organizations into an AI-powered future.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" variant="outline" href="#services">

@@ -33,10 +33,11 @@ export default function Book() {
               Blueprint for Transforming HR Through AI and Evidence
             </h2>
             <p className="text-muted-foreground mb-6">
-              A comprehensive guide to revolutionizing your HR department using
-              artificial intelligence and evidence-based practices. Written by industry
-              expert Burak Bakkaloglu, this book provides actionable insights and
-              strategies for modern HR leaders.
+              A comprehensive guide to revolutionizing your people and talent
+              solutions using artificial intelligence and evidence-based
+              practices. Written by industry expert Burak Bakkaloglu, this book
+              provides actionable insights and strategies for modern HR leaders
+              and talent oriented board rooms.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -51,8 +52,8 @@ export default function Book() {
               </div>
 
               <blockquote className="border-l-2 border-primary pl-4 italic text-muted-foreground">
-                "A must-read for any HR professional looking to stay ahead in the
-                rapidly evolving landscape of human resources management."
+                "A must-read for any HR professional looking to stay ahead in
+                the rapidly evolving landscape of human resources management."
                 <footer className="text-sm mt-2 font-semibold">
                   - HR Technology Magazine
                 </footer>
@@ -60,9 +61,7 @@ export default function Book() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg">
-                Order Now
-              </Button>
+              <Button size="lg">Order Now</Button>
               <Button size="lg" variant="outline">
                 Read Preview
               </Button>
