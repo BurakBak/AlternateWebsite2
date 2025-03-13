@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Brain, Users, LineChart, Lightbulb } from "lucide-react";
+import BlogFeed from "./BlogFeed";
 
 const services = [
   {
@@ -68,29 +69,43 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
-          {services.map((service, index) => (
-            <motion.div key={index} variants={item}>
-              <Card className="h-full transition-transform hover:-translate-y-2">
-                <CardHeader>
-                  <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                    <service.icon className="w-8 h-8 text-primary" />
-                  </div>
-                  <CardTitle className="text-2xl">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:col-span-2"
+          >
+            {services.map((service, index) => (
+              <motion.div key={index} variants={item}>
+                <Card className="h-full transition-transform hover:-translate-y-2">
+                  <CardHeader>
+                    <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                      <service.icon className="w-8 h-8 text-primary" />
+                    </div>
+                    <CardTitle className="text-2xl">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">
+                      {service.description}
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="lg:col-span-1"
+          >
+            <BlogFeed />
+          </motion.div>
+        </div>
       </div>
     </section>
   );
