@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -21,11 +20,7 @@ export default function Hero() {
               your human resources operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="group">
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button size="lg" variant="outline">
+              <Button size="lg" variant="outline" href="#services">
                 Learn More
               </Button>
             </div>

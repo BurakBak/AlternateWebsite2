@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import {
   Card,
   CardContent,
@@ -6,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Brain, Users, LineChart, Lightbulb, Cog } from "lucide-react";
+import { Brain, Users, LineChart, Lightbulb, Cog, ArrowRight } from "lucide-react";
 import BlogFeed from "./BlogFeed";
 
 const services = [
@@ -15,30 +16,35 @@ const services = [
     title: "People Function Transformation",
     description:
       "Transform your HR organization into a strategic business partner by redesigning your people function for the AI era. We build the right infrastructure, capabilities, and ways of working that deliver measurable business impact.",
+    href: "/services/transformation"
   },
   {
     icon: LineChart,
     title: "People Function Strategy Design & Execution",
     description:
       "Develop and implement comprehensive people strategies that address root causes. We combine operational data analysis, employee insights, and market benchmarking to create strategies aligned with your business objectives.",
+    href: "/services/strategy"
   },
   {
     icon: Users,
     title: "People Function Development",
     description:
       "Prepare your HR teams for the future through targeted upskilling in HR digitalization and AI applications. Our training programs equip your people professionals with the knowledge needed to lead in an AI-dominant landscape.",
+    href: "/services/development"
   },
   {
     icon: Cog,
     title: "AI Integration for People Functions",
     description:
       "Navigate the AI revolution in HR with practical, high-impact applications that maintain human-centered approaches. We assess your AI readiness and implement AI-powered talent solutions with ethical frameworks.",
+    href: "/services/ai-integration"
   },
   {
     icon: Lightbulb,
     title: "Capability & Skills Strategy",
     description:
       "Build organizational readiness through pragmatic skills frameworks that focus on critical capabilities. We identify gaps, design frameworks, and create targeted development systems aligned with strategic needs.",
+    href: "/services/capability"
   },
 ];
 
@@ -80,19 +86,24 @@ export default function Services() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {services.map((service, index) => (
                     <motion.div key={index} variants={item}>
-                      <Card className="h-full transition-transform hover:-translate-y-2">
-                        <CardHeader>
-                          <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
-                            <service.icon className="w-8 h-8 text-primary" />
-                          </div>
-                          <CardTitle className="text-2xl">{service.title}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <CardDescription className="text-base">
-                            {service.description}
-                          </CardDescription>
-                        </CardContent>
-                      </Card>
+                      <Link href={service.href}>
+                        <Card className="h-full transition-transform hover:-translate-y-2 cursor-pointer group">
+                          <CardHeader>
+                            <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                              <service.icon className="w-8 h-8 text-primary" />
+                            </div>
+                            <CardTitle className="text-2xl flex items-center gap-2">
+                              {service.title}
+                              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <CardDescription className="text-base">
+                              {service.description}
+                            </CardDescription>
+                          </CardContent>
+                        </Card>
+                      </Link>
                     </motion.div>
                   ))}
                 </div>
