@@ -14,7 +14,7 @@ const fetchBlogPosts = async () => {
       throw new Error('No items found in feed');
     }
 
-    return data.items.slice(0, 3).map((item: any) => ({
+    return data.items.slice(0, 4).map((item: any) => ({
       title: item.title,
       date: new Date(item.pubDate).toLocaleDateString(),
       description: item.description,
@@ -38,10 +38,10 @@ const BlogFeed = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-b from-blue-500/5 via-primary/5 to-transparent p-6 rounded-xl"
+      className="bg-gradient-to-b from-blue-500/10 via-primary/5 to-transparent p-6 rounded-xl"
     >
-      <Card className="border-2 border-blue-200/10 bg-background/90 backdrop-blur-sm">
-        <CardHeader className="border-b bg-muted/50">
+      <Card className="border-2 border-blue-200/20 bg-background/95 backdrop-blur-md shadow-xl">
+        <CardHeader className="border-b border-blue-200/10 bg-blue-500/5">
           <div className="flex items-center justify-between">
             <CardTitle className="text-2xl font-bold">IF INTERESTED by Burak</CardTitle>
             <Button variant="outline" size="sm" asChild>
@@ -64,7 +64,7 @@ const BlogFeed = () => {
         <CardContent className="p-6">
           {isLoading ? (
             <div className="space-y-4">
-              {[...Array(3)].map((_, i) => (
+              {[...Array(4)].map((_, i) => (
                 <Card key={i} className="animate-pulse">
                   <CardHeader>
                     <div className="h-4 bg-muted rounded w-3/4"></div>
@@ -86,7 +86,7 @@ const BlogFeed = () => {
           ) : (
             <div className="space-y-4">
               {posts?.map((post: any, index: number) => (
-                <Card key={index} className="border border-blue-200/20 hover:border-blue-400/30 transition-colors">
+                <Card key={index} className="border border-blue-200/30 hover:border-blue-400/50 transition-colors bg-white/5 hover:bg-white/10">
                   <CardHeader>
                     <CardTitle className="text-lg">{post.title}</CardTitle>
                     <CardDescription>{post.date}</CardDescription>
