@@ -30,7 +30,7 @@ export default function Hero() {
               <p className="text-sm md:text-base text-muted-foreground italic mb-4">
                 "Alternate's service portfolio stands out in the consulting landscape, combining deep HR subject matter expertise with a refreshingly pragmatic approach. Their offerings demonstrate a rare understanding of both people dynamics and technological possibilities. What impresses me most is how their solutions prioritize user experience and measurable business impact while remaining grounded in the realities of organizational transformation. This is exactly the kind of partner modern HR functions need to navigate the AI revolution."
               </p>
-              <p className="text-sm font-semibold">— XX, Chief Strategy Officer</p>
+              <p className="text-sm font-semibold">— Sam Harris, Chief Strategy Officer</p>
             </motion.div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild>
