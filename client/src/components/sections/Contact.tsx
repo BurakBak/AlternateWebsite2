@@ -16,7 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -66,10 +66,7 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Ready to transform your HR operations? Contact us to learn how we can help
-            your organization thrive with AI-powered solutions.
-          </p>
+          {/* Removed the paragraph here */}
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -87,30 +84,6 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold mb-1">Email Us</h4>
                   <p className="text-muted-foreground">info@alternateconsulting.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Call Us</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Visit Us</h4>
-                  <p className="text-muted-foreground">
-                    123 Business Street
-                    <br />
-                    New York, NY 10001
-                  </p>
                 </div>
               </div>
             </div>
