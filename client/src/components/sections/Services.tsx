@@ -87,7 +87,7 @@ export default function Services() {
                   {services.map((service, index) => (
                     <motion.div key={index} variants={item}>
                       <Link href={service.href}>
-                        <Card className="h-full transition-transform hover:-translate-y-2 cursor-pointer group">
+                        <Card className="h-full transition-all duration-300 ease-in-out hover:scale-[1.02] hover:-translate-y-1 cursor-pointer group">
                           <CardHeader>
                             <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
                               <service.icon className="w-8 h-8 text-primary" />
