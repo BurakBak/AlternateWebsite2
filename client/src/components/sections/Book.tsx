@@ -16,7 +16,7 @@ export default function Book() {
           >
             <div className="aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 p-8">
               <img
-                src="/Book Cover.JPG"
+                src="../../../attached_assets/Book_Cover.JPG"
                 alt="Blueprint for Transforming HR Book Cover"
                 className="rounded-lg shadow-xl object-cover"
               />
