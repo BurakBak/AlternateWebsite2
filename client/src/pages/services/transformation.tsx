@@ -20,13 +20,13 @@ export default function PeopleTransformation() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="border border-blue-200/10 bg-blue-500/5 backdrop-blur-sm">
+          <Card className="border-2 border-primary/20 bg-blue-500/5 backdrop-blur-sm hover:border-primary/40 transition-colors">
             <CardContent className="p-8">
               <h1 className="text-4xl font-bold mb-6 text-white">People Function Transformation</h1>
               <div className="prose prose-lg prose-invert max-w-none text-white/90">
                 <p>
-                  We can help create the right people function organization and infrastructure for your business. 
-                  The work goes beyond traditional moving organization boxes and changing the titles, to designing 
+                  We can help create the right people function organization and infrastructure for your business.
+                  The work goes beyond traditional moving organization boxes and changing the titles, to designing
                   the infrastructure, capabilities and ways of working together with you, powered by AI.
                 </p>
 
@@ -47,7 +47,7 @@ export default function PeopleTransformation() {
                 </ul>
 
                 <p>
-                  Our transformation methodology ensures your people function becomes a true strategic 
+                  Our transformation methodology ensures your people function becomes a true strategic
                   partner to the business with measurable impact on organizational performance.
                 </p>
               </div>

@@ -43,7 +43,7 @@ const BlogFeed = () => {
       <Card className="border-2 border-blue-200/10 bg-background/90 backdrop-blur-sm">
         <CardHeader className="border-b bg-muted/50">
           <div className="flex items-center justify-between">
-            <CardTitle className="text-2xl font-bold">Latest Blog Posts</CardTitle>
+            <CardTitle className="text-2xl font-bold">IF INTERESTED by Burak</CardTitle>
             <Button variant="outline" size="sm" asChild>
               <a 
                 href="https://burakb.substack.com" 
@@ -57,7 +57,7 @@ const BlogFeed = () => {
             </Button>
           </div>
           <CardDescription>
-            Stay updated with our latest insights on HR and AI
+            Stay updated with our latest insights on Talent and Business Practices and AI
           </CardDescription>
         </CardHeader>
 

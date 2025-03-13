@@ -20,7 +20,7 @@ export default function CapabilityStrategy() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="border border-blue-200/10 bg-blue-500/5 backdrop-blur-sm">
+          <Card className="border-2 border-primary/20 bg-blue-500/5 backdrop-blur-sm hover:border-primary/40 transition-colors">
             <CardContent className="p-8">
               <h1 className="text-4xl font-bold mb-6 text-white">Capability & Skills Strategy</h1>
               <div className="prose prose-lg prose-invert max-w-none text-white/90">

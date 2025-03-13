@@ -20,19 +20,19 @@ export default function PeopleStrategy() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="border border-blue-200/10 bg-blue-500/5 backdrop-blur-sm">
+          <Card className="border-2 border-primary/20 bg-blue-500/5 backdrop-blur-sm hover:border-primary/40 transition-colors">
             <CardContent className="p-8">
               <h1 className="text-4xl font-bold mb-6 text-white">People Function Strategy Design & Execution</h1>
               <div className="prose prose-lg prose-invert max-w-none text-white/90">
                 <p>
-                  We help you look past the symptoms and understand the underlying talent-related reasons 
-                  for business challenges and successes. Through a combination of operational data analysis, 
-                  employee insights, and market benchmarking, we create comprehensive people strategies 
+                  We help you look past the symptoms and understand the underlying talent-related reasons
+                  for business challenges and successes. Through a combination of operational data analysis,
+                  employee insights, and market benchmarking, we create comprehensive people strategies
                   aligned with your business objectives.
                 </p>
 
                 <p>
-                  No strategy is good without diligent execution. We establish necessary governance 
+                  No strategy is good without diligent execution. We establish necessary governance
                   structures and work with your units throughout implementation. Our approach includes:
                 </p>
 
@@ -52,7 +52,7 @@ export default function PeopleStrategy() {
                 </ul>
 
                 <p>
-                  Our end-to-end approach ensures your people strategy moves beyond PowerPoint to create 
+                  Our end-to-end approach ensures your people strategy moves beyond PowerPoint to create
                   real business impact.
                 </p>
               </div>
