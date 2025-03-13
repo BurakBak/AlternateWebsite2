@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Star } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export default function Book() {
   return (
@@ -18,14 +18,8 @@ export default function Book() {
               <img
                 src="/images/Book_Cover.JPG"
                 alt="Blueprint for Transforming HR Book Cover"
-                className="rounded-lg shadow-xl object-cover"
+                className="rounded-lg shadow-xl w-full h-full object-contain"
               />
-            </div>
-            <div className="absolute top-4 right-4 bg-background/80 backdrop-blur p-3 rounded-full shadow-lg">
-              <div className="flex items-center gap-1">
-                <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-                <span className="font-bold">4.9</span>
-              </div>
             </div>
           </motion.div>
 

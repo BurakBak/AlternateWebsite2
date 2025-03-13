@@ -52,17 +52,17 @@ const item = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-background">
+    <section id="services" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6">Our Services</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Comprehensive HR solutions powered by artificial intelligence and backed by
             evidence-based practices.
           </p>
@@ -73,19 +73,19 @@ export default function Services() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={item}>
               <Card className="h-full transition-transform hover:-translate-y-2">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <service.icon className="w-6 h-6 text-primary" />
+                  <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                    <service.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-2xl">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription>{service.description}</CardDescription>
+                  <CardDescription className="text-base">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             </motion.div>
