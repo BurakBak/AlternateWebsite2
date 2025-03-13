@@ -41,7 +41,7 @@ export default function Hero() {
               <img
                 src="/images/Profile_Suit.jpg"
                 alt="Burak Bakkaloglu - HR Consultant"
-                className="rounded-lg object-cover shadow-xl"
+                className="rounded-lg object-cover shadow-xl w-full h-full"
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
