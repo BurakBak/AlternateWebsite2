@@ -14,6 +14,7 @@ const navItems = [
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -31,7 +32,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="text-2xl font-bold">
+        <div className="text-xl md:text-2xl font-bold">
           <span className="cursor-pointer" onClick={() => window.location.href='/'}>
             Alternate
             <span className="text-primary">Consulting</span>
@@ -52,24 +53,25 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon">
               <Menu className="h-6 w-6" />
             </Button>
           </SheetTrigger>
-          <SheetContent>
-            <div className="flex flex-col space-y-4 mt-8">
+          <SheetContent side="right" className="w-[80vw] sm:w-[385px]">
+            <nav className="flex flex-col space-y-6 mt-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-lg font-medium hover:text-primary transition-colors"
+                  onClick={() => setIsOpen(false)}
+                  className="text-lg font-medium hover:text-primary transition-colors flex items-center"
                 >
                   {item.name}
                 </a>
               ))}
-            </div>
+            </nav>
           </SheetContent>
         </Sheet>
       </nav>
