@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Quote } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -18,6 +20,18 @@ export default function Hero() {
             <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
               People Functions are uniquely positioned to make the AI transition of businesses a true success. At Alternate, we help People Functions transform themselves first, then lead their organizations into an AI-powered future.
             </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="bg-muted/10 border border-primary/20 rounded-lg p-6 mb-8 backdrop-blur-sm"
+            >
+              <Quote className="h-8 w-8 text-primary mb-4" />
+              <p className="text-sm md:text-base text-muted-foreground italic mb-4">
+                "Alternate's service portfolio stands out in the consulting landscape, combining deep HR subject matter expertise with a refreshingly pragmatic approach. Their offerings demonstrate a rare understanding of both people dynamics and technological possibilities. What impresses me most is how their solutions prioritize user experience and measurable business impact while remaining grounded in the realities of organizational transformation. This is exactly the kind of partner modern HR functions need to navigate the AI revolution."
+              </p>
+              <p className="text-sm font-semibold">— XX, Chief Strategy Officer</p>
+            </motion.div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild>
                 <a href="#services">Learn More</a>
