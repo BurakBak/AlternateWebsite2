@@ -6,33 +6,39 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Brain, Users, LineChart, Lightbulb } from "lucide-react";
+import { Brain, Users, LineChart, Lightbulb, Cog } from "lucide-react";
 import BlogFeed from "./BlogFeed";
 
 const services = [
   {
     icon: Brain,
-    title: "AI-Powered HR Transformation",
+    title: "People Function Transformation",
     description:
-      "Leverage cutting-edge AI technology to automate HR processes, enhance decision-making, and create data-driven HR strategies.",
+      "Transform your HR organization into a strategic business partner by redesigning your people function for the AI era. We build the right infrastructure, capabilities, and ways of working that deliver measurable business impact.",
   },
   {
     icon: LineChart,
-    title: "Performance Management",
+    title: "People Function Strategy Design & Execution",
     description:
-      "Implement advanced performance tracking systems and develop metrics that align with your organization's strategic goals.",
+      "Develop and implement comprehensive people strategies that address root causes. We combine operational data analysis, employee insights, and market benchmarking to create strategies aligned with your business objectives.",
   },
   {
     icon: Users,
-    title: "Leadership Development",
+    title: "People Function Development",
     description:
-      "Build strong leaders through our comprehensive programs focusing on emotional intelligence, strategic thinking, and team management.",
+      "Prepare your HR teams for the future through targeted upskilling in HR digitalization and AI applications. Our training programs equip your people professionals with the knowledge needed to lead in an AI-dominant landscape.",
+  },
+  {
+    icon: Cog,
+    title: "AI Integration for People Functions",
+    description:
+      "Navigate the AI revolution in HR with practical, high-impact applications that maintain human-centered approaches. We assess your AI readiness and implement AI-powered talent solutions with ethical frameworks.",
   },
   {
     icon: Lightbulb,
-    title: "Strategic HR Consulting",
+    title: "Capability & Skills Strategy",
     description:
-      "Get expert guidance on HR strategy, organizational design, and change management to drive business success.",
+      "Build organizational readiness through pragmatic skills frameworks that focus on critical capabilities. We identify gaps, design frameworks, and create targeted development systems aligned with strategic needs.",
   },
 ];
 
@@ -67,8 +73,7 @@ export default function Services() {
               <CardHeader className="border-b bg-muted/50">
                 <CardTitle className="text-4xl font-bold">Our Services</CardTitle>
                 <CardDescription className="text-lg">
-                  Comprehensive HR solutions powered by artificial intelligence and backed by
-                  evidence-based practices.
+                  Transform your HR organization into a strategic business partner with our comprehensive solutions.
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
