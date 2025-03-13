@@ -49,7 +49,6 @@ export default function Navbar() {
               {item.name}
             </a>
           ))}
-          <Button>Get Started</Button>
         </div>
 
         {/* Mobile Navigation */}
@@ -70,7 +69,6 @@ export default function Navbar() {
                   {item.name}
                 </a>
               ))}
-              <Button className="w-full">Get Started</Button>
             </div>
           </SheetContent>
         </Sheet>
