@@ -35,6 +35,14 @@ export default function CapabilityStrategy() {
               <li>Integration of skills frameworks with hiring and development planning</li>
             </ul>
 
+            <div className="my-12">
+              <img 
+                src="/attached_assets/Skills_Visual.png"
+                alt="Skills and Capability Framework"
+                className="w-full rounded-lg shadow-lg"
+              />
+            </div>
+
             <p>
               We take a practical approach that avoids common pitfalls of overly complex skills 
               initiatives while delivering genuine impact on organizational capability.
