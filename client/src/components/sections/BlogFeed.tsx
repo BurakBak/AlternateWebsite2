@@ -42,14 +42,14 @@ const BlogFeed = () => {
     >
       <Card className="border-2 border-red-900/40 bg-background/95 backdrop-blur-md shadow-xl">
         <CardHeader className="border-b border-red-900/20 bg-red-900/5">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <CardTitle className="text-2xl font-bold">IF INTERESTED by Burak</CardTitle>
-            <Button variant="outline" size="sm" asChild>
+            <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
               <a 
                 href="https://burakb.substack.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-2"
+                className="flex items-center gap-2 justify-center"
               >
                 Visit Blog
                 <ExternalLink className="h-4 w-4" />
