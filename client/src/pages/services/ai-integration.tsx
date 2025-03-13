@@ -19,8 +19,8 @@ export default function AIIntegration() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">AI Integration for People Functions</h1>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <h1 className="text-4xl font-bold mb-6 text-foreground">AI Integration for People Functions</h1>
+          <div className="prose prose-lg dark:prose-invert max-w-none [&>p]:text-muted-foreground [&>ul]:text-muted-foreground">
             <p>
               Harness the power of AI to revolutionize your HR practices while maintaining 
               human-centered approaches. Our services include:

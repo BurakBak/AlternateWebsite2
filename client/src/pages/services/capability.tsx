@@ -19,8 +19,8 @@ export default function CapabilityStrategy() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">Capability & Skills Strategy</h1>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <h1 className="text-4xl font-bold mb-6 text-foreground">Capability & Skills Strategy</h1>
+          <div className="prose prose-lg dark:prose-invert max-w-none [&>p]:text-muted-foreground [&>ul]:text-muted-foreground">
             <p>
               Design pragmatic skills frameworks that drive organizational readiness without 
               unnecessary complexity. Our services include:

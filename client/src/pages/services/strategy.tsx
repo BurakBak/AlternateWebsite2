@@ -19,8 +19,8 @@ export default function PeopleStrategy() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">People Function Strategy Design & Execution</h1>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <h1 className="text-4xl font-bold mb-6 text-foreground">People Function Strategy Design & Execution</h1>
+          <div className="prose prose-lg dark:prose-invert max-w-none [&>p]:text-muted-foreground [&>ul]:text-muted-foreground">
             <p>
               We help you look past the symptoms and understand the underlying talent-related reasons 
               for business challenges and successes. Through a combination of operational data analysis, 

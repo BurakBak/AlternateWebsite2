@@ -19,8 +19,8 @@ export default function PeopleDevelopment() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-6">People Function Development</h1>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <h1 className="text-4xl font-bold mb-6 text-foreground">People Function Development</h1>
+          <div className="prose prose-lg dark:prose-invert max-w-none [&>p]:text-muted-foreground [&>ul]:text-muted-foreground">
             <p>
               Develop and upskill your HR organization in digitalization of HR and use cases of AI. 
               In the form of online and in-class trainings, your HR teams can understand the landscape 
