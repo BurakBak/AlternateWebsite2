@@ -38,8 +38,9 @@ const BlogFeed = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
+      className="bg-gradient-to-b from-primary/5 to-transparent p-6 rounded-xl"
     >
-      <Card className="h-full border-2">
+      <Card className="border-2 bg-background/80 backdrop-blur-sm">
         <CardHeader className="border-b bg-muted/50">
           <div className="flex items-center justify-between">
             <CardTitle className="text-2xl font-bold">Latest Blog Posts</CardTitle>
@@ -85,7 +86,7 @@ const BlogFeed = () => {
           ) : (
             <div className="space-y-4">
               {posts?.map((post, index) => (
-                <Card key={index} className="border border-muted">
+                <Card key={index} className="border border-muted hover:border-primary/20 transition-colors">
                   <CardHeader>
                     <CardTitle className="text-lg">{post.title}</CardTitle>
                     <CardDescription>{post.date}</CardDescription>
