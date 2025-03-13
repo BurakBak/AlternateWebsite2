@@ -36,12 +36,18 @@ export default function PeopleDevelopment() {
                   the real future of work. Our development offerings include:
                 </p>
 
-                <ul className="text-white/90">
-                  <li>AI literacy and application training for HR professionals</li>
-                  <li>Skills framework development and implementation guidance</li>
-                  <li>Leadership development program design for the AI era</li>
-                  <li>Change management capabilities for digital transformation</li>
-                  <li>Data literacy and analytics for HR decision-making</li>
+                <ul className="text-white/90 list-none pl-0">
+                  {[
+                    "AI literacy and application training for HR professionals",
+                    "Skills framework development and implementation guidance",
+                    "Leadership development program design for the AI era",
+                    "Change management capabilities for digital transformation",
+                    "Data literacy and analytics for HR decision-making"
+                  ].map((item, index) => (
+                    <li key={index} className="pl-6 relative before:content-['-'] before:absolute before:left-0 before:text-primary">
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <p>

@@ -36,13 +36,19 @@ export default function PeopleStrategy() {
                   structures and work with your units throughout implementation. Our approach includes:
                 </p>
 
-                <ul className="text-white/90">
-                  <li>Facilitating insight-driven strategy workshops with executive teams</li>
-                  <li>Setting up program management and execution frameworks</li>
-                  <li>Designing monitoring systems without unnecessary KPIs</li>
-                  <li>Creating accountability mechanisms for strategy implementation</li>
-                  <li>Supporting leaders through the change process</li>
-                  <li>Adjusting strategies based on implementation feedback</li>
+                <ul className="text-white/90 list-none pl-0">
+                  {[
+                    "Facilitating insight-driven strategy workshops with executive teams",
+                    "Setting up program management and execution frameworks",
+                    "Designing monitoring systems without unnecessary KPIs",
+                    "Creating accountability mechanisms for strategy implementation",
+                    "Supporting leaders through the change process",
+                    "Adjusting strategies based on implementation feedback"
+                  ].map((item, index) => (
+                    <li key={index} className="pl-6 relative before:content-['-'] before:absolute before:left-0 before:text-primary">
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <p>

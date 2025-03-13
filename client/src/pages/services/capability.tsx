@@ -25,17 +25,23 @@ export default function CapabilityStrategy() {
               <h1 className="text-4xl font-bold mb-6 text-white">Capability & Skills Strategy</h1>
               <div className="prose prose-lg prose-invert max-w-none text-white/90">
                 <p>
-                  Design pragmatic skills frameworks that drive organizational readiness without 
-                  unnecessary complexity. Our services include:
+                  An organization is "skills-based" when the majority of talent practices are based on skills. It is a journey starting with a skills framework and continuing with basing that framework on other talent applications like internal and external hiring, promotions, workforce planning, and employee development. 
+                  Every organization cannot fully embark on that journey; a skills framework and skills-based organization require careful design and good deployment. A skills initiative will be overkill for any company with fewer than a few thousand employees.  
                 </p>
 
-                <ul className="text-white/90">
-                  <li>Assessment of organizational capability gaps against strategic objectives</li>
-                  <li>Design of focused skills frameworks that prioritize critical roles and capabilities</li>
-                  <li>Implementation of skills assessment methodologies that balance accuracy and simplicity</li>
-                  <li>Development of internal talent marketplaces and mobility systems</li>
-                  <li>Creation of targeted upskilling programs aligned with capability needs</li>
-                  <li>Integration of skills frameworks with hiring and development planning</li>
+                <ul className="text-white/90 list-none pl-0">
+                  {[
+                    "Understanding the business needs for Skills Framework and provide alternative scopes of Skills work that will fit the needs of the organization.",
+                    "Scoping the roles and understanding the necessary investments for the work ahead. Leveraging already existing frameworks in the market where possible to avoid unnecessary effort.",
+                    "Design of focused skills frameworks that prioritize critical roles and capabilities",
+                    "Implementation of skills assessment methodologies that balance accuracy and simplicity",
+                    "Understanding organizational skill gaps and future readiness.",
+                    "Development of Skills Practices as: internal talent marketplaces and mobility systems, targeted upskilling programs aligned with capability needs, create insights for build buy borrow decisions to for future readiness"
+                  ].map((item, index) => (
+                    <li key={index} className="pl-6 relative before:content-['-'] before:absolute before:left-0 before:text-primary">
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <div className="my-12">

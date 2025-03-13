@@ -29,13 +29,19 @@ export default function AIIntegration() {
                   human-centered approaches. Our services include:
                 </p>
 
-                <ul className="text-white/90">
-                  <li>Assessment of AI readiness across HR processes and systems</li>
-                  <li>Implementation of AI-powered talent applications (recruiting, development, skills assessment)</li>
-                  <li>Design of ethical guardrails for AI deployment in people decisions</li>
-                  <li>Creation of balanced AI implementation roadmaps that avoid common pitfalls</li>
-                  <li>Development of AI coaches and mentoring systems</li>
-                  <li>Building capabilities to manage AI-human collaboration effectively</li>
+                <ul className="text-white/90 list-none pl-0">
+                  {[
+                    "Assessment of AI readiness across HR processes and systems",
+                    "Implementation of AI-powered talent applications (recruiting, development, skills assessment)",
+                    "Design of ethical guardrails for AI deployment in people decisions",
+                    "Creation of balanced AI implementation roadmaps that avoid common pitfalls",
+                    "Development of AI coaches and mentoring systems",
+                    "Building capabilities to manage AI-human collaboration effectively"
+                  ].map((item, index) => (
+                    <li key={index} className="pl-6 relative before:content-['-'] before:absolute before:left-0 before:text-primary">
+                      {item}
+                    </li>
+                  ))}
                 </ul>
 
                 <p>
