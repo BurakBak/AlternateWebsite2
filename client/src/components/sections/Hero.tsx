@@ -39,8 +39,8 @@ export default function Hero() {
           >
             <div className="aspect-square rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 p-8">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"
-                alt="Professional consultant"
+                src="/attached_assets/Profile Suit.jpg"
+                alt="Burak Bakkaloglu - HR Consultant"
                 className="rounded-lg object-cover shadow-xl"
               />
             </div>

@@ -16,8 +16,8 @@ export default function Book() {
           >
             <div className="aspect-[3/4] rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 p-8">
               <img
-                src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80"
-                alt="Book Cover"
+                src="/attached_assets/Book Cover.JPG"
+                alt="Blueprint for Transforming HR Book Cover"
                 className="rounded-lg shadow-xl object-cover"
               />
             </div>
@@ -44,7 +44,7 @@ export default function Book() {
               expert Burak Bakkaloglu, this book provides actionable insights and
               strategies for modern HR leaders.
             </p>
-            
+
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-4">
                 <BookOpen className="w-6 h-6 text-primary mt-1" />
@@ -55,7 +55,7 @@ export default function Book() {
                   </p>
                 </div>
               </div>
-              
+
               <blockquote className="border-l-2 border-primary pl-4 italic text-muted-foreground">
                 "A must-read for any HR professional looking to stay ahead in the
                 rapidly evolving landscape of human resources management."
