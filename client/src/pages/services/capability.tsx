@@ -37,7 +37,7 @@ export default function CapabilityStrategy() {
 
             <div className="my-12">
               <img 
-                src="/attached_assets/Skills_Visual.png"
+                src="/images/Skills_Visual.png"
                 alt="Skills and Capability Framework"
                 className="w-full rounded-lg shadow-lg"
               />
