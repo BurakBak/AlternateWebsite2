@@ -12,7 +12,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Transforming <span className="text-primary">HR</span> Through AI and Evidence
+              Transforming <span className="text-primary">HR</span> Through <span className="text-primary">AI</span> and Evidence
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
               People Functions are uniquely positioned to make the AI transition of businesses a true success. At Alternate, we help People Functions transform themselves first, then lead their organizations into an AI-powered future.
