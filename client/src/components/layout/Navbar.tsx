@@ -32,10 +32,10 @@ export default function Navbar() {
     >
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="text-2xl font-bold">
-          <Link href="/">
+          <span className="cursor-pointer" onClick={() => window.location.href='/'}>
             Alternate
-          </Link>
-          <span className="text-primary">Consulting</span>
+            <span className="text-primary">Consulting</span>
+          </span>
         </div>
 
         {/* Desktop Navigation */}

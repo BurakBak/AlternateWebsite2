@@ -15,7 +15,7 @@ const testimonials = [
     position: "HR Director, Tech Corp",
     content:
       "The AI-powered solutions provided by Alternate Consulting have revolutionized our HR processes. We've seen a 40% increase in efficiency.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80",
+    image: "/images/Profile_Suit.jpg",
   },
   {
     name: "Michael Chen",
