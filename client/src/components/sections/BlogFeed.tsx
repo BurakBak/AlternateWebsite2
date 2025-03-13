@@ -38,10 +38,10 @@ const BlogFeed = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-b from-red-900/10 via-red-800/5 to-transparent p-6 rounded-xl"
+      className="bg-gradient-to-b from-background/80 to-transparent p-6 rounded-xl"
     >
-      <Card className="border-2 border-red-900/40 bg-background/95 backdrop-blur-md shadow-xl">
-        <CardHeader className="border-b border-red-900/20 bg-red-900/5">
+      <Card className="border-2 border-muted bg-muted/5 backdrop-blur-md shadow-xl">
+        <CardHeader className="border-b border-muted bg-muted/10">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <CardTitle className="text-2xl font-bold">IF INTERESTED by Burak</CardTitle>
             <Button variant="outline" size="sm" className="w-full sm:w-auto" asChild>
@@ -86,7 +86,7 @@ const BlogFeed = () => {
           ) : (
             <div className="space-y-4">
               {posts?.map((post: any, index: number) => (
-                <Card key={index} className="border border-red-900/30 hover:border-red-700/50 transition-colors bg-red-950/5 hover:bg-red-950/10">
+                <Card key={index} className="border border-muted/40 hover:border-muted transition-colors bg-muted/5 hover:bg-muted/10">
                   <CardHeader>
                     <CardTitle className="text-lg">{post.title}</CardTitle>
                     <CardDescription>{post.date}</CardDescription>
