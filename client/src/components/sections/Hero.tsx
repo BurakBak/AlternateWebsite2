@@ -5,7 +5,7 @@ import { Quote } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[90vh] md:min-h-screen flex items-center pt-16 md:pt-0">
+    <section id="home" className="min-h-[90vh] md:min-h-screen flex items-center pt-24 md:pt-32">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
