@@ -23,7 +23,19 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="bg-muted/10 border border-primary/20 rounded-lg p-6 mb-4 backdrop-blur-sm"
+            >
+              <Quote className="h-8 w-8 text-primary mb-4" />
+              <p className="text-sm md:text-base text-muted-foreground italic mb-4">
+                "The AI revolution offers People Functions not just a challenge, but a profound opportunity to reexamine their fundamental purpose. This moment invites us to return to first principles, what truly drives human performance, engagement, and growth, while embracing new technological possibilities. Our approach combines deep HR expertise with practical AI knowledge to make People Functions future ready and effective. We're helping organizations build people practices that are simultaneously more human-centered and technologically advanced, returning to timeless principles while moving boldly forward."
+              </p>
+              <p className="text-sm font-semibold">— Burak Bakkaloglu, Founder & CEO, Alternate</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
               className="bg-muted/10 border border-primary/20 rounded-lg p-6 mb-8 backdrop-blur-sm"
             >
               <Quote className="h-8 w-8 text-primary mb-4" />
